@@ -1,0 +1,52 @@
+.form {
+  background-color: var(--color-dark--2);
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  /* font-family: "Segoe UI Emoji", "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
+    sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flag {
+  width: 4rem; /* Set the width of the image */
+  height: 4rem; /* Set the height of the image */
+  object-fit: contain; /* Maintain the aspect ratio and fit the image inside the specified dimensions */
+
+  position: absolute;
+  right: 2.5%;
+  top: 43%;
+  font-size: 2.8rem;
+}
+
+.form.loading {
+  opacity: 0.3;
+}
+
+.form.loading button {
+  pointer-events: none;
+  background-color: var(--color-light--1);
+  border: 1px solid var(--color-light--1);
+  color: var(--color-dark--0);
+}
+
+:global(.react-datepicker) {
+  font-family: inherit;
+  font-size: 1.2rem;
+}
